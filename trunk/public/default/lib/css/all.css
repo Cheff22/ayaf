@@ -1,0 +1,6 @@
+body{font: 14px/22px "Microsoft YaHei",Verdana,Arial;}
+@media (min-width: 768px) {}
+@media (min-width: 1024px) {}
+.container{width: 1024px; margin: 0 auto;text-align: center;}
+.navbar{margin-bottom: 0px;}
+.content{min-height: 300px;padding-top: 100px;background-color: #f8f8f8;}

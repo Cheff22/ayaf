@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule .* index.php
+#RewriteEngine On
+#RewriteBase /
+RewriteRule !\.(css|js|ico|gif|jpg|jpeg|png|eot|otf|svg|ttf|woff|woff2|json|map)$ index.php
+#RewriteRule ^index\.php$ - [L]
+#RewriteRule ^/([^/]+)/([^/]+)/([^/]+)/? /index.php?app=$1&mod=$2&act=$3 [QSA]
+#RewriteCond %{REQUEST_FILENAME} !-f     
+#RewriteCond %{REQUEST_FILENAME} !-d     
+#RewriteCond %{REQUEST_FILENAME} !^(.+)\.css$
+#RewriteCond %{REQUEST_FILENAME} !^(.+)\.js$
+#RewriteCond %{REQUEST_URI} !^.*(.css|.js|.gif|.png|.jpg|.jpeg|.pdf|.mp4|.json)$ 
+#RewriteRule .* index.php
+#RewriteRule . /index.php [L]
+</IfModule>

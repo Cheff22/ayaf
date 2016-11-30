@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="keywords" content="<?php echo $keywords; ?>" />
+    <meta name="description" content="<?php echo $description; ?>">
+    <meta name="author" content="">
+    <link rel="icon" href="<?php echo RESOURCE_PATH . '/lib/bootstrap/images/favicon.png'; ?>">
+    <title><?php echo $title; ?></title>
+
+    <?php include_once VIEW_PATH.'/web-css.phtml';?>
+  </head>
+  <body>
+        <?php include_once VIEW_PATH.'/web-header.phtml';?>
+        <?php include_once $pageTypes[$pageType].'.phtml';?>
+        <?php include_once VIEW_PATH.'/web-footer.phtml';?>
+        <?php include_once VIEW_PATH.'/web-scripts.phtml';?>
+  </body>
+</html>
