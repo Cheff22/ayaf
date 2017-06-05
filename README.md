@@ -1,9 +1,10 @@
 # ayaf
 ayaf framwork for yaf
 
-1.先安装yaf环境	
-2.配置主机目录	
-3.复制框架文件
+1.phpstudy,apache+php5.6+ 
+2.yaf扩展,redis扩展 
+3.本地虚拟主机mytest.test.com
+4.导入数据库
 	
 
 文件目录结构	
@@ -33,4 +34,7 @@ ayaf framwork for yaf
 
 1.具体数据库层加载规则可以model下Index.php里面的dbSample	
 2.具体redis加载规则可以model下Index.php里面的redisSample
+
+
+
 
